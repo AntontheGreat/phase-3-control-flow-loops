@@ -1,5 +1,23 @@
 def happy_new_year
   # your code here
+  i = 10
+  while i > 0
+    puts i
+    i -= 1
+  end
+  puts "Happy New Year!"
+end
+
+# or
+
+def happy_new_year
+  # your code here
+  counter = 10
+  until counter == 0
+    puts counter
+    counter -= 1
+  end
+  puts "Happy New Year!"
 end
 
 # No need to modify this code! Use this to implement the fizzbuzz_printer method.
@@ -17,8 +35,24 @@ end
 
 def fizzbuzz_printer
   # your code here
+  (1..100).each do |num|
+    puts fizzbuzz(num)
+  end
 end
+
+# function reverseString(str) {
+#   let reversedStr = "";
+#   for (let i = 0; i < str.length; i++) {
+#     reversedStr = str[i] + reversedStr;
+#   }
+#   return reversedStr;
+# }
 
 def reverse_string(str)
   # your code here
+  reverse_str = ""
+  str.length.times do |i|
+    reverse_str = str[i] + reverse_str
+  end
+  reverse_str
 end
